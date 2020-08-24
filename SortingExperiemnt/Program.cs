@@ -17,28 +17,35 @@ namespace SortingExperiemnt
             fruits[3] = "Annans";
             fruits[4] = "Gurka";
                 
-            // Then I create the instances of the classes,
-            //  I'm going to call from here.
+            // Then I create the instances of the classes, I'm going to call from here.
             BubbleSort bubbleSort = new BubbleSort();
             CharacterSort characterSort = new CharacterSort();
             BinarySearch binarySearch = new BinarySearch();
 
 
             sortedList = bubbleSort.Sort(numbers);
+            //
+            //......
 
             Spacing(1);
             Console.WriteLine($"Sorted the array of numbers in a rising order. {Environment.NewLine}");
             bubbleSort.Print(sortedList);
-
+            //
+            //
+            //......
             
             Spacing(1);
             Console.WriteLine($"Sorted the array of strings alphabetical order. {Environment.NewLine}");
             characterSort.Print(characterSort.AscendingOrder(fruits));
-
+            //
+            //
+            //......
             Spacing(1);
             Console.WriteLine($"Sorted the array of strings non-alphabetical order. {Environment.NewLine}");
             characterSort.Print(characterSort.DescendingOrder(fruits));
-
+            //
+            //
+            //......
 
             Spacing(2);
             binarySearch.Setup();
